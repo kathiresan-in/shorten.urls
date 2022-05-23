@@ -1,7 +1,8 @@
 package com.dkb.url.shorten.service.impl
 
+import org.springframework.stereotype.Component
 import java.util.Random
-
+@Component
 class Base62UniqueIdGenerator(
     private val base62Chars : String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
     private val bound : Int = 999999,
